@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const baseCfg = require('./webpack.base')
 var path = require('path')
 const servicenowConfig = require('./servicenow.config')
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 process.env.BABEL_ENV = 'development'
 process.env.NODE_ENV = 'development'
@@ -29,7 +30,7 @@ const cfg = {
     contentBase: path.join(__dirname, '/../dist'),
     compress: false,
     disableHostCheck: true,
-    port: 9000,
+    port: 9900,
     hot: true,
     proxy: {
       [servicenowConfig.REST_API_PATH]: {
@@ -68,7 +69,11 @@ const cfg = {
   },
 
   plugins: [
-    new webpack.NamedModulesPlugin(),
+    new ESLintPlugin({
+      useEslintrc: true,
+      emitWarning: true
+    }),
+    new webpack.ids.HashedModuleIdsPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     baseCfg.plugins.createIndexHtml(),
     new webpack.DefinePlugin({

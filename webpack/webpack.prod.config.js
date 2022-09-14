@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const baseCfg = require("./webpack.base");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 process.env.BABEL_ENV = "production";
 process.env.NODE_ENV = "production";
@@ -28,7 +29,11 @@ const cfg = {
   },
 
   plugins: [
-    new webpack.HashedModuleIdsPlugin(),
+    new ESLintPlugin({
+      useEslintrc: true,
+      emitWarning: true
+    }),
+    new webpack.ids.HashedModuleIdsPlugin(),
     baseCfg.plugins.createIndexHtml()
   ]
 };

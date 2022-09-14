@@ -50,31 +50,31 @@
   padding-right: 20px;
 }
 
-.bp3-dark.left-sidebar {
+.bp4-dark.left-sidebar {
   background-color: #293742;
 }
 
-.bp3-dark.left-sidebar .sidebar-header {
+.bp4-dark.left-sidebar .sidebar-header {
   border-color: #3a4854;
 }
 
-.left-sidebar-collapsed .bp3-tabs {
+.left-sidebar-collapsed .bp4-tabs {
   display: none;
 }
 
-.bp3-tab-list {
+.bp4-tab-list {
   border-bottom: 2px solid #e4e8eb;
   display: flex;
   justify-content: center;
 }
 
-.bp3-dark .bp3-tab-list {
+.bp4-dark .bp4-tab-list {
   border-color: #3a4854;
 }
 
-.bp3-tab-indicator-wrapper {
+.bp4-tab-indicator-wrapper {
   height: 32px !important;
-  /* account for 2px border-bottom of .bp3-tab-list */
+  /* account for 2px border-bottom of .bp4-tab-list */
 }
 
 .sidebar-scroll {
@@ -82,13 +82,13 @@
 }
 
 
-.bp3-tabs .bp3-tab {
+.bp4-tabs .bp4-tab {
   text-align: center;
   width: 50%;
   margin-right: 0;
 }
 
-.bp3-tab-panel {
+.bp4-tab-panel {
   padding: 0rem 1rem 1rem;
 }
 
@@ -121,7 +121,7 @@
   transform: translateX(-50%);
 }
 
-.bp3-dark .custom-menu-divider>h5>span {
+.bp4-dark .custom-menu-divider>h5>span {
   background-color: #293742;
 }
 
@@ -137,7 +137,7 @@
   z-index: 50;
 }
 
-.bp3-dark .custom-menu-divider:before {
+.bp4-dark .custom-menu-divider:before {
   border-color: #3a4854;
 }
 
@@ -145,16 +145,16 @@
   margin: 0 -1rem;
 }
 
-.tree-wrapper .bp3-tree-node-content {
+.tree-wrapper .bp4-tree-node-content {
   padding: 0 1rem;
 }
 
-.tree-wrapper.flat .bp3-tree-node-content {
+.tree-wrapper.flat .bp4-tree-node-content {
   padding-left: 1.4rem;
   /* account for no carriage */
 }
 
-.tree-wrapper.flat .bp3-tree-node-caret-none {
+.tree-wrapper.flat .bp4-tree-node-caret-none {
   min-width: 0;
 }
 
@@ -164,7 +164,7 @@
   justify-content: space-between;
 }
 
-.bp3-progress-bar {
+.bp4-progress-bar {
   margin-left: 0.5rem;
 }
 
@@ -176,11 +176,11 @@
   /* padding: 1rem; */
 }
 
-.tree-wrapper .bp3-tree-node-content-1 {
+.tree-wrapper .bp4-tree-node-content-1 {
   padding-left: 2.5rem;
 }
 
-.tree-wrapper .bp3-tree-node-content-2 {
+.tree-wrapper .bp4-tree-node-content-2 {
   padding-left: 4rem;
 }
 
