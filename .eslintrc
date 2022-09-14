@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -17,14 +17,15 @@
   "extends": [
     "eslint:recommended",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended"
   ],
   "plugins": [
     "react",
-    "babel",
+    "@babel",
     "import"
   ],
-
   "rules": {
     "comma-dangle": 0,
     "no-mixed-spaces-and-tabs": 0,
@@ -53,5 +54,10 @@
     "react/jsx-wrap-multilines": 1
   },
   "settings": {
+    "import/resolver": "webpack",
+    "import/modules": "webpack",
+    "react": {
+      "version": "detect"
+    }
   }
 }
